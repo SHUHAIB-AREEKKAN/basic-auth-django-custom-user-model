@@ -7,7 +7,7 @@ from .forms import CustomUserCreationForm,CustomUserChangeForm
 from .models import CustomUser
 
 class CustomUserAdmin(UserAdmin):
-    add_forms=CustomUserCreationForm
+    add_form=CustomUserCreationForm
     form = CustomUserChangeForm
     model=CustomUser
     list_display = ['email','username','name']
